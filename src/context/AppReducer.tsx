@@ -1,4 +1,4 @@
-export default (state:any,action:any)=>{
+const AppReducer = (state:any,action:any)=>{
     switch(action.type){
         case 'ADD_TRANSACTION':
             const trans={
@@ -22,3 +22,5 @@ export default (state:any,action:any)=>{
             return state;
     }
 }
+
+export default AppReducer;
